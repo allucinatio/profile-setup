@@ -25,4 +25,88 @@ section {
   max-width: 760px;
   background-color: #ffffff;
   padding: 2rem 0;
+
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "name email"
+  "password confirm-password"
+  "picture sign-up";
+  padding: 20px;
+}
+
+.grid * {
+    margin: 10px;
+}
+
+.header {
+ text-align: center;
+ margin-bottom: 30px;
+}
+
+.role {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+  grid-area: name;
+}
+
+#name {
+  width: 95%;
+  height: 36px;
+}
+
+.email {
+  grid-area: email;
+}
+
+#email {
+  width: 95%;
+  height: 36px;
+}
+
+.password {
+  grid-area: password;
+}
+
+#password {
+  width: 95%;
+  height: 36px;
+}
+
+.confirm-password {
+  grid-area: confirm-password;
+}
+
+#confirm-password {
+  width: 95%;
+  height: 36px;
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.sign-up {
+  grid-area: sign-up;
+  width: 95%;
+  height: 40px;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.sign-up a {
+
+  text-decoration: none;
+  color: black;
 }
